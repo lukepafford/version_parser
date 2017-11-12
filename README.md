@@ -1,10 +1,11 @@
 # version_parser
 This program will return the url of the newest version of software available from a url.
-The program will work against software that follows the pattern from the 
-Semantic Version 2.0.0 specification (http://semver.org)
+The program will work by default against software that follows the pattern from the 
+Semantic Version 2.0.0 specification (http://semver.org).
 
-The script is designed to be Python 2/3 compatible, and only
-depends on the requests module being available
+Directory browsing must be enabled on the remote software repository
+as the contents of the HTML from the url are parsed.
+( Most repositories should have this enabled )
 
 Ex.
 If you are downloading software from the url https://mysoftware.com/stable
