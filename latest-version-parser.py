@@ -67,7 +67,7 @@ def main():
 	print(latest_version)
 
 class Latest_Version_Parser(HTMLParser):
-	""" Returns a list of Samba Tarball names """
+	""" Returns a list of strings containing software versions """
 	def __init__(self, prefix, suffix):
 		HTMLParser.__init__(self)
 		self.versions = list()
