@@ -13,7 +13,7 @@ suffix = '.tar.gz'
 
 If there were only three versions available (1.0.0, 1.0.1, 1.1.0)
 Then the program would return the following url:
-'https://mysoftware.com/stable/1.1.0'
+'https://mysoftware.com/stable/mysoftware-1.1.0.tar.gz'
 
 The program is designed to provide a dynamic download for tools like curl, or Ansible.
 Note that the output will likely need to be trimmed of newlines 
