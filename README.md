@@ -3,6 +3,9 @@ This program will return the url of the newest version of software available fro
 The program will work against software that follows the pattern from the 
 Semantic Version 2.0.0 specification (http://semver.org)
 
+The script is designed to be Python 2/3 compatible, and only
+depends on the requests module being available
+
 Ex.
 If you are downloading software from the url https://mysoftware.com/stable
 and the downloadable files have the consistent naming scheme of mysoftware-x.x.x.tar.gz
