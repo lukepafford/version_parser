@@ -54,13 +54,15 @@ def main():
 				help='regex matching the version')
 
 	args = argparser.parse_args()
+	pattern = '({0})'.format(args.pattern)
+
 	try:
 		r = requests.get(args.url)
 	except requests.exceptions.ConnectionError:
 		print('Failed to connect to {0}'.format(args.url))
 		sys.exit(1)
 
-	parser = Latest_Version_Parser(args.prefix, args.suffix, args.pattern)
+	parser = Latest_Version_Parser(args.prefix, args.suffix, pattern)
 	parser.feed(r.text)
 	if parser.versions:
 		sorted_versions = sort_versions(parser.versions)
