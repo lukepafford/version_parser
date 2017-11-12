@@ -60,7 +60,7 @@ def main():
 		print('Failed to connect to {0}'.format(args.url))
 		sys.exit(1)
 
-	parser = Latest_Version_Parser(args.prefix, args.suffix)
+	parser = Latest_Version_Parser(args.prefix, args.suffix, args.pattern)
 	parser.feed(r.text)
 	if parser.versions:
 		sorted_versions = sort_versions(parser.versions)
